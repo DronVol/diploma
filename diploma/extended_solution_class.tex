@@ -92,15 +92,7 @@ $$m(x=0,t)=-\alpha_{0}\gamma u_{0}t+m_{0}$$
 $$m_{0}-m(x=0,\hat{t})= \alpha_{0}\gamma u_{0}\hat{t} = e^{c}$$
 \par Получили выражение для $m(x,\hat{t})$:
 $$m =m_{0} -\alpha_{0}\gamma u_{0}\hat{t}e^{-\gamma x}$$
-\par Провести дальнейшую проверку планируется в последующей работе.
-
-\par Вернёмся к этой задаче. Найдём $\Phi(x)$, если знаем, что решение имело вид $m=m_{0}-\gamma u_{0}\frac{t-\frac{xm_{0}}{u_{0}}}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}}$.
-\par На характиристике имели $\frac{dx}{dt}=\frac{u_{0}}{m}$, значит $x=\frac{u_{0}}{m}t+C$, тогда для кинетического уравнения $m_{t}=-\gamma u_{0}\alpha$ имеем:
-$$m=m_{0}-\gamma u_{0}\frac{C}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}}$$
-$$\frac{dm}{dx}=-\gamma(m+\Phi(x))$$
-\par Выпишем $\frac{dm}{dx}$:
-$$\frac{dm}{dx}=-\gamma u_{0}C\frac{\alpha_{0}-1}{\alpha_{0}}\frac{e^{\gamma x}}{(1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x})^{2}}$$
-\par Подставляем всё в уравнение и получаем выражение для $\Phi(x)$:
-$$\Phi(x)=\gamma u_{0}\frac{C}{(1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{gamma x})^{2}}-m_{0}$$
-\par Проверка выполняется путём непосредственной подстановки полученной $\Phi(x)$ в исходное уравнение.
-\par Параметр $C$ указывает на конкретную кривую, на которой искалось решение.
+\par Выразим $\hat{t}$, зная искомое решение (из которого мы получили $\Phi(x)$:
+$$m_{0}-\gamma u_{0} \alpha_{0}\hat{t}=m_{0}-\gamma u_{0}\frac{t-x\frac{m_{0}}{u_{0}}}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}}$$
+\par Выразим $\hat{t}$:
+$$\hat{t}=\frac{e^{\gamma x}(t-x\frac{m_{0}}{u_{0}})}{\alpha_{0}-(\alpha_{0}-1)e^{\gamma x}}$$
