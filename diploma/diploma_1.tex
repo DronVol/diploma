@@ -1,0 +1,48 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{extsizes}
+\usepackage[english, russian]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage[T2A, T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}  % установка полей
+\usepackage{cases}
+\usepackage{cancel}
+\usepackage[final]{pdfpages}
+\geometry{top=3.5cm,bottom=2cm,left=2cm,right=2cm}
+%\usepackage{graphicx}
+\graphicspath{}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,}
+%\renewcommand{\figurename}{Рис}
+\renewcommand{\figurename}{Рис.}
+\renewcommand{\d}{\displaystyle}
+%\renewcommand{\rmdefault}{ftm}
+\newtheorem*{note}{Замечание} \theoremstyle{remark}
+\newtheorem*{theorems}{Теорема}
+\newtheorem*{conjecture}{Гипотеза}
+\begin{document}
+%\include{titlepage_2}
+\begin{titlepage}
+%\includepdf[pages=-,pagecommand={},width=\textwidth]{titlepage_2.pdf}
+\includepdf[pages=-]{titlepage_2.pdf}
+\end{titlepage}
+\setcounter{page}{2}
+\tableofcontents
+\pagebreak
+\include{introduction_1}
+\include{lit_review}
+\include{main_equations_filtration}
+\include{problem_statement_filtration}
+\include{simplified_problem_filtration}
+\include{full_problem_filtration}
+\include{solution_in_rows}
+\include{extended_solution_class}
+\include{diffusion_main_equations_and_problem_statement}
+\include{brinkman_simple_problem}
+\include{conclusion}
+\include{bibliography_1}
+
+\end{document}

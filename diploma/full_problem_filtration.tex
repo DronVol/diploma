@@ -1,0 +1,33 @@
+\section{Решение задачи без упрощений}
+\subsection{Полное уравнение.}
+\par Теперь получим решение в случае, когда уравнение неразрывности не упрощается. Имеем систему 
+\begin{equation*}
+\begin{cases}
+(m\alpha)_{t}+u_{0}\alpha_{x}&= m_{t}\\
+m_{t}&= -\gamma u_{0}\alpha\\
+\end{cases}
+\end{equation*}
+\par Подставляя второе в первое и раскрывая скобки, получим $$\d \alpha_{t}+\frac{u_{0}}{m}\alpha_{x}=(\alpha-1)\gamma\frac{u_{0}}{m}\alpha$$
+\par Рассматривая характеристики $\d \frac{dx}{dt}=\frac{u_{0}}{m}$ и интегрируя соотношение, получаем $\d \int \frac{d\alpha}{\alpha^{2}-\alpha}=\int\gamma dx=\int\frac{d(\alpha-1)}{\alpha-1}-\int\frac{d\alpha}{\alpha}$. Интегрируя и потенцируя, получаем окончательно выражение для $\alpha$:
+\begin{equation*}
+\d
+\alpha=
+\begin{cases}
+\d
+\frac{1}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}},\;\;& x<\frac{u_{0}}{m}t\\
+0,\;\;& x\geq \frac{u_{0}}{m}t\\
+\end{cases}
+\end{equation*}
+
+\par Теперь, зная решение для $\alpha$, можно выразить $m$: $ \d
+m= m|_{t=0}+\int\limits^{t}_{0}m_{t}dt=m_{0}+\int\limits^{t}_{0}\gamma u_{0}\alpha=m_{0}+\int\limits^{t}_{\frac{xm_{0}}{u_{0}}}\gamma u_{0}\frac{1}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}} dt=$
+\begin{equation*}
+=
+\begin{cases}
+\d
+m_{0}-\gamma u_{0}\frac{1}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}}(t-\frac{xm_{0}}{u_{0}}),\;\;& x<\frac{u_{0}}{m_{0}}t\\
+m_{0},\;\;& x\geq \frac{u_{0}}{m_{0}}t\\
+\end{cases}
+\end{equation*}
+
+\par Можно заметить, что полученное решение при $\alpha_{0} \rightarrow 0$ переходит в полученное ранее выражение $$\d \alpha=\frac{1}{1-\frac{\alpha_{0}-1}{\alpha_{0}}e^{\gamma x}}\approx\frac{\alpha_{0}}{e^{\gamma x}}$$
